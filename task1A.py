@@ -27,8 +27,8 @@ def count_the_article(book):
 
 
 def sorted_words(book):
-	dic1 = {}
 	l = unique_words(book)
+	dic1 = {}
 	li = []
 	for w in l:
 		if w not in dic1:
@@ -42,11 +42,11 @@ def sorted_words(book):
 
 def character_word_count(book):
 	dic1 = {}
-        l = unique_words(book)
-        li = []
-        for w in l:
-                if w not in dic1:
-                        dic1[w] = len(w)
+	l = unique_words(book)
+	li = []
+	for w in l:
+		if w not in dic1:
+			dic1[w] = len(w)
 	return dic1 			 	  
 
 def starts_with_vow(book):
@@ -55,9 +55,9 @@ def starts_with_vow(book):
 	for l in book:
 		l = l.strip()
 		l = l.split()
-			for w in l:
-				if w[0] in char_tup:
-					count+=1
+		for w in l:
+			if w[0] in char_tup:
+				count+=1
 	return count	
 
 
@@ -70,7 +70,7 @@ print(count_the_article(f2))
 f3 = open(book_name)
 print(sorted_words(f3))
 f4 = open(book_name)
-print(character_word-count(f4))
+print(character_word_count(f4))
 f5 = open(book_name)
 print(starts_with_vow(f5))
 
