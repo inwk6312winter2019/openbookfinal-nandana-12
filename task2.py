@@ -1,15 +1,15 @@
 def create_log(fi,f1,f2,f3,f4):
 	for line in fi:
-		if("GET" in line)
+		if("GET" in line):
 			f1.write(line)
 
-		elif("POST" in line)
+		elif("POST" in line):
 			f2.write(line)
 
-		elif("PUT" in line)
+		elif("PUT" in line):
 			f3.write(line)
 		
-		elif("DELETE" in line)
+		elif("DELETE" in line):
 			f4.write(line)
 
 
